@@ -7,7 +7,10 @@ distribution= {}
 my_percentages= []
 #choose the excel file you want to run the test through
 wb= load_workbook(filename='')
+#mention sheet to pull the data from. Default to sheet 1
 sheetranges= wb['Sheet1']
+
+#mention column to pull the data from. Default to A1
 print(type(sheetranges['A1']))
 
 for cell in sheetranges['B'][1:]:
