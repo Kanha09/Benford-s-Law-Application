@@ -5,8 +5,8 @@ my_vals= []
 my_strs= []
 distribution= {}
 my_percentages= []
-
-wb= load_workbook(filename='transaction1.xlsx')
+#choose the excel file you want to run the test through
+wb= load_workbook(filename='')
 sheetranges= wb['Sheet1']
 print(type(sheetranges['A1']))
 
